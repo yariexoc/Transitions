@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+ 
+nav{
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block; 
+
+}
+a {
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family:  'Gloria Hallelujah', cursive;
+  font-size: 20px;
+}
+nav ul li a:hover{
+  border-bottom: solid white 4px;
+  box-sizing: border-box;
+  background-color: purple;
+
+}
+.active{
+  border-bottom: solid white 4px;
+  background-color: purple;
+}
+
+ /* page 1*/
+
+.page1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width,height,background-color;
+  transition-duration: 2s;
+
+}
+ .page1:hover{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+/* page 2*/
+
+ .page2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  transition-property:width,height,background-color,border;
+  transition-duration: 1s;
+  transition-delay: 0s,1s,2s,3s;
+  box-sizing: border-box;
+
+}
+ .page2:hover{
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  border:solid 6px #2c3e50;
+}
+
+/* page 3*/
+
+.page3{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #2980b9;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  transition-property:width,height,background-color;
+  transition-duration: 1s;
+  transition-delay: 0s,0s, 1s;
+
+}
+
+.page3>header{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  transition-property: width, height,border-radius,background-color;
+  transition-duration: 1s;
+  transition-delay: 2s,2s,3s;  
+
+}
+.page3:hover{
+  width: 250px;
+  height: 250px;
+  background-color: green;
+
+}
+.page3:hover header{
+  width: 120px;
+  height: 120px;
+  background-color: lightblue;
+  border-radius: 50%;
+
+}
+
+/* page 4*/
+
+ .page4{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: red;
+  transition-property: width, height, background-color;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s,2s;
+}
+ .page4:hover{
+  width: 250px;
+  height: 250px;
+  background-color: lightgreen;
+}
+ .page4>dir{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  transition-property: left, background-color, border-radius;
+  transition-duration: 1s;
+  transition-delay: 3s, 4s, 4s;
+}
+ .page4:hover dir{
+  position: absolute;
+  left: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+ .page4>article{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  background-color: orange;
+  transition-property: right,border-radius;
+  transition-duration: 1s;
+  transition-delay: 3s,4s;
+}
+ .page4:hover>article{
+  right: 20px;
+  border-radius: 50%;
+}
+
+/* Page 5 */
+
+.page5{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: lightblue;
+  transition-property: width,height;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s;
+}
+.page5:hover{
+  width: 300px;
+  height: 400px;
+
+}
+.page5>article{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background-color: black;
+  transition-property: top, right,border-radius;
+  transition-duration: 1s;
+  transition-delay: 2s,2s,3s;
+}
+.page5:hover article{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+}
+.page5>main{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: black;
+  transition-property: border-radius,background-color;
+  transition-duration: 1s;
+  transition-delay: 4s, 5s;
+}
+.page5:hover main{
+  border-radius: 50%;
+  background-color: green;
+}
+.page5>footer{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  transition-property: left, bottom,border-radius;
+  transition-duration: 1s;
+  transition-delay: 2s,2s,3s;
+}
+.page5:hover footer{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+}
+
+/* Page 6*/
+
+.page6{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: pink;
+  transition-property: width, height, border-top, border-right,border-bottom,border-left ;
+  transition-duration: 1s;
+  transition-delay: 0s, 0s, 1s,2s,3s,4s;
+}
+.page6:hover{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border-top: solid 6px darkgreen;
+  border-right: solid 6px orange ;
+  border-left: solid 6px yellow ;
+  border-bottom: solid 6px lightgreen ;
+}
+.page6>article{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color:purple;
+  transition-property: top,left,border-radius;
+  transition-duration: 1s;
+  transition-delay: 5s,5s,6s;
+}
+.page6:hover article{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+}
+.page6>main{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  background-color:purple;
+  transition-property: top,right,border-radius;
+  transition-duration: 1s;
+  transition-delay: 7s,7s,8s;
+}
+.page6:hover main{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+}
+.page6>nav{
+  position: absolute;
+  width: 50px;
+  height: 50px; 
+  right: 0;
+  bottom: 0;
+  background-color:purple;
+  transition-property: bottom,right,border-radius;
+  transition-duration: 1s;
+  transition-delay: 9s,9s,10s;
+}
+.page6:hover nav{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+}
+.page6>dir{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  background-color:purple;
+  transition-property: left,bottom,border-radius;
+  transition-duration: 1s;
+  transition-delay: 11s,11s,12s;
+}
+.page6:hover dir{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+}
+.page6>footer{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: purple;
+  transition-property: border-radius,background-color;
+  transition-duration: 1s;
+  transition-delay: 13s,14s;
+}
+.page6:hover footer{
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+}
